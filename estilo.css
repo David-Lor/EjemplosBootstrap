@@ -1,0 +1,19 @@
+body {
+    padding: 25px 30px 25px 30px;
+    font-style: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.row>[class^=col] { /* Cualquier clase que empiece por "col" dentro de clase "row" */
+    border: solid 1px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.confondo {
+    background-color: goldenrod;
+    border: dotted 1px;
+}

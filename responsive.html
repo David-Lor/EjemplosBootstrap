@@ -12,9 +12,9 @@
     <div class="container">
         <h1>Bootstrap: Responsive</h1>
         
-        <h2>Comportamiento según tamaño de dispositivo (ventana)</h2>
+        <h2>Comportamiento según tamaño de pantalla</h2>
         <ul class="text-monospace">
-            <li>&nbsp;- : superpequeño (móvil muy pequeño &lt; 576px)</li>
+            <li>xs : superpequeño (móvil muy pequeño &lt; 576px)</li>
             <li>sm : small (tablet &gt; 576px)</li>
             <li>md : mediano (portátil &gt; 768px)</li>
             <li>lg : grande (sobremesa &gt; 992px)</li>
@@ -39,6 +39,15 @@
             <div class="col-sm-3 col-6">Nombre</div>
             <div class="col-sm-3 col-6">Apellidos</div>
             <div class="col-sm-6 col-12">Correo electrónico</div>
+        </div>
+        <hr/>
+
+        <h3>Ocultar elementos por tamaño de pantalla</h3>
+        <div class="row">
+            <div class="col">Nombre</div>
+            <div class="col d-none d-sm-block">Apellidos (se oculta en sm)</div>
+            <button class="col d-block d-sm-none" style="color: black;">Botón</button>
+            <div class="col">Correo electrónico</div>
         </div>
         
 

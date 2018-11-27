@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Componentes Bootstrap HTML</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bootstrap: Componentes</h1>
+        
+        <h2>Alert sencillos</h2>
+        <div class="container">
+            <div class="alert alert-primary" role="alert">
+                <b>Alert primary:</b> azul, información
+            </div>
+            <div class="alert alert-success" role="alert">
+                <b>Alert success:</b> verde, operación realizada correctamente
+            </div>
+            <div class="alert alert-danger" role="alert">
+                <b>Alert danger:</b> rojo, hubo algún error
+            </div>
+        </div>
+        <br/>
+
+        <h2>Alert con botón de cerrar</h2>
+        <div class="container">
+            <div class="alert alert-warning fade show" role="alert">
+                <b>Alert warning dismissible:</b> naranja, advertencia, puede cerrarse
+                <button type="button" class="close" data-dismiss="alert" aria-label="Cerrar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+        <br/>
+
+        <h2>Mostrar/ocultar alert con JavaScript y botón</h2>
+        <div class="container">
+            <div class="alert alert-warning fade show" id="alert-cerrable" role="alert">
+                Pulsa el botón para cerrar
+            </div>
+            <button type="button" id="alert-button" class="btn btn-primary">Pulsar para cerrar</button>
+        </div>
+        <br/>
+
+        <h2>Badges</h2>
+        <div class="container">
+            <button type="button" class="btn btn-primary" id="badge-button">
+                Púlsame <span class="badge badge-light" id="badge-count">0</span>
+            </button>
+        </div>
+        <br/>
+
+        <h2>Enlaces como botones</h2>
+        <div class="container">
+            <a href="#enlacebotonizado1" class="btn btn-primary">
+                Enlace botonizado 1
+            </a>
+            <a href="#enlacebotonizado2" class="btn btn-success">
+                Enlace botonizado 2
+            </a>
+            <button type="button" class="btn btn-success">
+                Botón normal        
+            </button>
+        </div>
+        <br/>
+
+        <h2>Botones outline y ocupando todo el ancho</h2>
+        <div class="container">
+            <button type="button" class="btn btn-outline-success btn-lg btn-block">
+                Botón normal        
+            </button>
+        </div>
+        <br/>
+
+        <h2>Botones deshabilitados</h2>
+        <div class="container">
+            <button type="button" class="btn btn-outline-success btn-lg btn-block" disabled>
+                Botón disabled      
+            </button>
+            <a href="#enlacebotonizado1" class="btn btn-outline-primary btn-lg btn-block disabled" aria-disabled="true">
+                Enlace botonizado disabled
+            </a>
+        </div>
+        <br/>
+
+        <h2>Grupo de botones</h2>
+        <div class="container">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">Left</button>
+                <button type="button" class="btn btn-secondary">Middle</button>
+                <button type="button" class="btn btn-secondary">Right</button>
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#">Dropdown link 1</a>
+                    <a class="dropdown-item" href="#">Dropdown link 2</a>
+                </div>
+            </div>
+        </div>
+        <br/>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="componentes-handlers.js"></script>
+</body>
+</html>
